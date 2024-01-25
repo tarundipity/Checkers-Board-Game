@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Call link css and javascript file  -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script defer src="script.js"></script>
+    <title>Checkers</title>
+
+</head>
+
+<body>
+    <main>
+        <!-- Create a table row by low based on a checkers board. Each cell that holds a checkers piece is given an id from 0 - 23 -->
+        <table>
+            <!-- Row 1: purple top row-->
+            <tr>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="0"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="1"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="2"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="3"></p>
+                </td>
+            </tr>
+            <!-- Row 2: purple middle row-->
+            <tr>
+                <td>
+                    <p class="purple-piece" id="4"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="5"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="6"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="7"></p>
+                </td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <!-- Row 3: purple bottom row-->
+            <tr>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="8"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="9"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="10"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="purple-piece" id="11"></p>
+                </td>
+            </tr>
+            <!-- Row 4: Empty row 1-->
+            <tr>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <!-- Row 5: Empty row 1-->
+            <tr>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+            </tr>
+            <!-- Row 6: white top row-->
+            <tr>
+                <td><span class="white-piece" id="12"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="13"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="14"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="15"></span></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <!-- Row 7: white middle row-->
+            <tr>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="16"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="17"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="18"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="19"></span></td>
+            </tr>
+            <!-- Row 8: white bottom row-->
+            <tr>
+                <td><span class="white-piece" id="20"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="21"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="22"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="white-piece" id="23"></span></td>
+                <td class="noPieceHere"></td>
+            </tr>
+        </table>
+
+        <!-- Text used to indicate players turn on desktop-->
+        <div class="desktop">
+            <div class="purple-turn-text">
+                Purple's turn
+            </div>
+            <p id="divider">|</p>
+            <div class="white-turn-text">
+                White's turn
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

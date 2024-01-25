@@ -1,0 +1,111 @@
+* {
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop {
+    margin: 0;
+    width: 100%;
+}
+
+.noPieceHere {
+    background-color: #ac94f4;
+}
+
+td {
+    text-align: center;
+    background-color: #653b9fd9;
+    width: 65px;
+    height: 65px;
+}
+
+.purple-turn-text {
+    text-align: center;
+    color: #4c0082e3;
+    font-family: "fantasy";
+    font-size: 55px;
+}
+
+.white-turn-text {
+    text-align: center;
+    color: rgb(0,0,0);
+    font-family: "fantasy";
+    font-size: 55px;
+}
+
+.white-piece {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    background-color: #ffffffe3;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.purple-piece {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    background-color: #4c0082e3;
+    border: 0.5px solid whitesmoke;
+    border-radius: 50px;
+}
+
+.king.purple-piece {
+    background-color: #c6267b;
+}
+
+.king.white-piece {
+    background-color: #f76301;
+}
+
+p {
+    display: inline-block;
+}
+
+#divider {
+    font-size: 90px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+span {
+    display: inline-block;
+}
+
+@media screen and (max-width: 560px) {
+    .purple-piece {
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+    .white-piece {
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+    td {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .purple-turn-text {
+        font-size: 40px;
+    }
+
+    .white-turn-text {
+        font-size: 40px;
+    }
+}
